@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <div id="wrapper">
@@ -24,7 +26,7 @@
     </header> 
     <nav>
       <div id="nav">
-        <ul>
+        <ul id="mainmenu">
           <li><a href="#">Home</a></li>
           <li><a href="inside.html">Inside</a></li>
           <li><a href="#">Menu Item &raquo;</a>
@@ -151,6 +153,18 @@
 
   <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
   <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+<!--JS File For Responsive Menu -->	
+<script src="js/responsive-menu.js"></script>
+		
+<script>
+  domready(function(){
+      selectnav('mainmenu', {
+    label: '*** Click to select menu *** '
+  });
+  prettyPrint()
+    })
+</script>
 
   <script type="text/javascript">
   $(window).load(function() {
